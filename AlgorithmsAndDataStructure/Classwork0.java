@@ -12,7 +12,8 @@ public class Classwork0 {
     }
 
     public static List<String> makeAllWords(int k, int maxLetter){
-        return makeAllWords(k, maxLetter, "", new ArrayList<>(Math.pow(maxLetter, k)));
+        int size = (int) Math.pow(maxLetter, k);
+        return makeAllWords(k, maxLetter, "", new ArrayList<>(size));
     }
 
     public static List<String> makeAllWords(int k, int maxLetter, String currentString, List<String> combination){
